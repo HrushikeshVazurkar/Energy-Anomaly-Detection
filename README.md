@@ -4,7 +4,7 @@ This project consists of 3 main functions(each running in threads):
 2. Data fetch, model training and inferencing - This function reads the synthetic data, trains the model and loads that trained model for inferencing on future data points.
 3. Data visualisation - This function visualises the data and highlights anomalous instances.
 
-Model Chosen:
+### Model Chosen:
 
 Isolation Forest was chosen for this particular task due to the following reasons:
 

@@ -238,9 +238,9 @@ class THREAD_FUNCTIONS:
         print("Historical Data Collection - 1 year.")
         while not stop_event.is_set():
             data_point = q.get()
-            if len(eval_q) < 100 and data_collection == True:
+            if len(eval_q) < 8760 and data_collection == True:
                 eval_q.append(data_point)
-            elif len(eval_q) == 100 and data_collection == True:
+            elif len(eval_q) == 8760 and data_collection == True:
                 data_collection = False
                 print("\nModel Training:")
                 ML.algo()
